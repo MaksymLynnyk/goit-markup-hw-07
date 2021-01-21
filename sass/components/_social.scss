@@ -1,0 +1,24 @@
+.links-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+.svg{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+.links-social:hover,
+.links-social:focus {
+    background-color: var(--secondary-link-color);
+} 
+
+.links-social:hover .svg,
+.links-social:focus .svg {
+    fill: #ffffff;
+}
