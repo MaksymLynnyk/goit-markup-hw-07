@@ -13,7 +13,7 @@
 .modal.is-hidden {
     visibility: hidden;
     opacity: 0;
-   /* pointer-events: none;*/
+   /* pointer-events: none; */
     
 }
 .modal.is-hidden .modal-box {
@@ -43,6 +43,7 @@
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
 }
 .modal-close svg {
     width: 11px;
@@ -53,7 +54,6 @@
 .modal-close:focus svg {
     fill: #2196F3;
 }
-
 .modal-title {
     margin-top: 0;
     margin-bottom: 12px;
@@ -75,34 +75,49 @@
     line-height: 1.15;
     letter-spacing: 0.01em;
 }
-.modal-input-style input,   
-.modal-input-style textarea {
-   /* width: 100%;*/
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-  color: rgba(117, 117, 117, 0.5);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-input-style input:hover,
-.modal-input-style input:focus,
-.modal-input-style textarea:hover,
-.modal-input-style textarea:focus {
-    outline: #2196F3 auto 1px;
-    border: 1px solid #2196F3;
-}
-.modal-input-style input:hover + .modal-input-ico svg,
-.modal-input-style input:focus + .modal-input-ico svg {
-    fill: #2196F3;
-}
 .modal-input-style input {
     height: 40px;
-   padding-left: 42px;
-   width: 100%;
-   
-   /* color: rgba(117,117,117,0.5);
- -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    padding-left: 42px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: rgba(117, 117, 117, 0.5);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus
+ {
+    @extend %modaltext;
 }
+&:hover + .modal-input-ico svg,
+&:focus + .modal-input-ico svg {
+    fill: #2196F3;
+}
+}
+.modal-input-style textarea {
+    width: 100%;
+     border: 1px solid rgba(33, 33, 33, 0.2);
+     border-radius: 4px;
+     color: rgba(117, 117, 117, 0.5);
+     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     max-width: 100%;
+     min-height: 120px;;
+     padding: 12px 16px;
+     font-size: 14px;
+     font-weight: 400;
+     letter-spacing: 0.01em;
+&:hover,
+&:focus {
+    @extend %modaltext;
+}
+&::placeholder {    
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+}
+
 .modal-input-ico {
     position: absolute;
     top: 25px;
@@ -112,25 +127,14 @@
     align-items: center;
     width: 18px;
     height: 18px;
-}
-.modal-input-ico svg {
+
+
+   & svg {
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-input-style textarea {
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 120px;;
-    padding: 12px 16px;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-}
-.modal-input-style textarea::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-}
+     }
+    
+    }
+
 .modal-yes {
     display: flex;
     justify-content: flex-end;
@@ -141,34 +145,35 @@
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}
-.modal-yes a {
+
+& a {
     color: #2196F3;
     text-decoration: underline;
 }
-.modal-yes input[type=checkbox] {
+& input[type=checkbox] {
     opacity: 0;
 }
-.modal-yes label {
+& label {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.modal-yes label::before {
+&::before {
     content: "";
     width: 16px;
     height: 15px;
     margin-right: 10px;
-    
+}   
 }
 .modal-yes input[type=checkbox]:focus + label::before {
     outline: #2196F3 auto 1px;
-}
-.modal-yes input[type=checkbox] + label::before {
+
+&[type=checkbox] + label::before {
     background: url('../img/square.svg');
 }
-.modal-yes input[type=checkbox]:checked + label::before {
+&[type=checkbox]:checked + label::before {
     background: url('../img/check.svg');
+}
 }
 .modal-btn-send {
     display: block;
@@ -184,12 +189,12 @@
     letter-spacing: 0.06em;
     color: #FFFFFF;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-btn-send:hover,
-.modal-btn-send:focus {
+
+&:hover,
+&:focus {
     background: #188CE8;
 }
-
+}
 .hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
