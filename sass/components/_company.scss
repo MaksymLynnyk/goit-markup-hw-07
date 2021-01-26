@@ -22,12 +22,13 @@
 }
 .company-svg{
     fill: #afb1b8;
+
+.company-link:hover &,
+.company-link:focus & {
+    fill: $secondary-link-color; 
 }
-.company-link:hover .company-svg,
-.company-link:focus .company-svg {
-    fill: var(--secondary-link-color); 
 }
 .company-link:hover,
 .company-link:focus {
-    border-color: var(--secondary-link-color); 
+    border-color: $secondary-link-color; 
 }	

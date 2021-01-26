@@ -6,7 +6,6 @@
     text-align: center;
 }
 .images-block{
-  
     position: relative;
     display: flex;
     justify-content: center;
@@ -16,9 +15,8 @@
     padding-right: auto;
     max-width: 100%;
     height: auto;
-}
 
-.images-block .items {
+& .items {
     position: relative; 
         display: block;
         max-width: 100%;
@@ -26,20 +24,21 @@
      
    background: rgba(47, 48, 58, 0.8);
 }
+
+& .items + .items{
+    margin-left: 30px;
+}
+}
 .img-block {
     display: block;
     max-width: 100%;
     height: auto;
 }
-.images-block .items + .items{
-    margin-left: 30px;
-}
-
 .doit {
     position: absolute;
     bottom: 0;
     margin-top: 0;
-     padding-top: 27px;
+    padding-top: 27px;
     padding-bottom: 27px;
     margin-bottom: 0;
     width: 100%;

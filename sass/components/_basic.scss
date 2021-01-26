@@ -1,9 +1,10 @@
- html { 
+
+html { 
     width: 100%;
     box-sizing: border-box;
     
 }
-*:before, *:after {
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
@@ -22,7 +23,7 @@ header{
 
 
 .currentLink {
-    color: var(--secondary-link-color); 
+    color: #2196F3; 
 }
  .container {
     margin-left: auto;
@@ -32,17 +33,6 @@ header{
     padding-right: 15px;
   
 }  
-a {
-    text-decoration: none; 
-   }
-
-ul 
-{ list-style: none; 
-    padding: 0px;
-    margin: 0px;
-}
-
-
 .link{
     padding: 0px;
     margin: 0px;

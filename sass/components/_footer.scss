@@ -3,18 +3,19 @@
     background: #2F303A;
     justify-content: space-between;
     
-    }
-    .foot-add{
+}
+.foot-add{
         display: flex;
         padding-top: 60px;
-        padding-bottom: 60px;}
-    
+        padding-bottom: 60px;
+}
     .foot-items{
         display: flex;
         align-items: center;
         margin-right: 94px;
         padding: 0 0;
     }
+
     .foot-list{
         display: flex;
         align-items: center;
@@ -22,7 +23,6 @@
         width: 44px;
         height: 44px;
         border-radius: 50%;
-        background-color:var(--bg);
         background-position: center;
         background-repeat: no-repeat;
         background-color: #ffffff1a;
@@ -49,7 +49,7 @@
     }
     .foot-icons{
         margin-right: 94px;
-        /*padding-top: 10px;*/
+        padding-top: 15px;
     }
     .foot-go{
         display: flex;
@@ -64,12 +64,14 @@
     }
     .foot-link:hover,
     .foot-link:focus {
-        background: var(--secondary-link-color);
-    }
-    .foot-link:hover .foot-svg,
-    .foot-link:focus .foot-svg {
+        background: $secondary-link-color;
+    
+
+    &:hover .foot-svg,
+    &:focus .foot-svg {
         fill: #FFFFFF;
     }
+}
     .footer-logo{
           flex-direction: column;
         margin-right: 70px;
@@ -79,17 +81,19 @@
        margin-top: 7px;
         
     }
+
     .logo-foot{
        
         align-items: center; 
-        color: var(--secondary-link-color);
+        color: $secondary-link-color;
         font-family: Raleway;
         font-style: normal;
         font-weight: bold;
         font-size: 26px;
         line-height: 1.19;
         padding-top: 0px;
-        padding-bottom: 25px }
+        padding-bottom: 25px 
+    }
     
     .logo-foot .logo-web-footer{
        
@@ -100,6 +104,7 @@
             font-size: 26px;
             line-height: 1.19;
             }
+            
     .logo .logo-studio-footer{
             
             width: 145px;
@@ -112,26 +117,27 @@
             font-weight: bold;
             font-size: 26px;
             line-height: 1.2;
-            color: var(--secondary-link-color);   
+            color: $secondary-link-color;   
     }
     
     .adress{
-        width: 231px;
-       margin-top: 20px;
+    width: 231px;
+    margin-top: 20px;
     color: #FFFFFF;;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    }
-    .adress-footer{
+   
+    &-footer{
         margin-top: 20px;
     }
-    .adress:hover {
-        color: var(--secondary-link-color); 
+    &:hover {
+        color: $secondary-link-color; 
     }
-    .adress:focus{
-        color: var(--secondary-link-color);
+    &:focus{
+        color: $secondary-link-color;
     }
+     }
     .contacts{
         display: block;
         margin-top:9px;
@@ -145,11 +151,11 @@
         font-size: 14px;
         line-height: 1.7;
         text-decoration: none;
+       
+    &:hover {
+        color: $secondary-link-color; 
     }
-    
-    .contacts:hover {
-        color: var(--secondary-link-color); 
+    &:focus{
+        color: $secondary-link-color;
     }
-    .contacts:focus{
-        color: var(--secondary-link-color);
-    }
+}
