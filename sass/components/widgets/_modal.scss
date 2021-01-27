@@ -1,5 +1,6 @@
 
-.modal {
+
+.modal { 
     position: fixed;
     z-index: 100;
     top: 0;
@@ -135,46 +136,45 @@
     
     }
 
-.modal-yes {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 30px;
-    color: #757575;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-& a {
-    color: #2196F3;
-    text-decoration: underline;
-}
-& input[type=checkbox] {
-    opacity: 0;
-}
-& label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-&::before {
-    content: "";
-    width: 16px;
-    height: 15px;
-    margin-right: 10px;
-}   
-}
-.modal-yes input[type=checkbox]:focus + label::before {
-    outline: #2196F3 auto 1px;
-
-&[type=checkbox] + label::before {
-    background: url('../img/square.svg');
-}
-&[type=checkbox]:checked + label::before {
-    background: url('../img/check.svg');
-}
-}
+    .modal-yes {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 30px;
+        color: #757575;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+    .modal-yes a {
+        color: #2196F3;
+        text-decoration: underline;
+    }
+    .modal-yes input[type=checkbox] {
+        opacity: 0;
+    }
+    .modal-yes label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-yes label::before {
+        content: "";
+        width: 16px;
+        height: 15px;
+        margin-right: 10px;
+        
+    }
+    .modal-yes input[type=checkbox]:focus + label::before {
+        outline: #2196F3 auto 1px;
+    }
+    .modal-yes input[type=checkbox] + label::before {
+        background: url('../img/square.svg');
+    }
+    .modal-yes input[type=checkbox]:checked + label::before {
+        background: url('../img/check.svg');
+    }
 .modal-btn-send {
     display: block;
     width: 200px;
