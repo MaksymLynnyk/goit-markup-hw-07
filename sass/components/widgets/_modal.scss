@@ -146,35 +146,36 @@
         font-weight: 400;
         line-height: 1.71;
         letter-spacing: 0.03em;
-    }
-    .modal-yes a {
+   
+    & a {
         color: #2196F3;
         text-decoration: underline;
     }
-    .modal-yes input[type=checkbox] {
+    & input[type=checkbox] {
         opacity: 0;
     }
-    .modal-yes label {
+    & label {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .modal-yes label::before {
+    & label::before {
         content: "";
         width: 16px;
         height: 15px;
         margin-right: 10px;
         
     }
-    .modal-yes input[type=checkbox]:focus + label::before {
+    & input[type=checkbox]:focus + label::before {
         outline: #2196F3 auto 1px;
     }
-    .modal-yes input[type=checkbox] + label::before {
+    & input[type=checkbox] + label::before {
         background: url('../img/square.svg');
     }
-    .modal-yes input[type=checkbox]:checked + label::before {
+    & input[type=checkbox]:checked + label::before {
         background: url('../img/check.svg');
     }
+}
 .modal-btn-send {
     display: block;
     width: 200px;
