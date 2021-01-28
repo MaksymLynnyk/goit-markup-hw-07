@@ -23,24 +23,26 @@ line-height: 2;
 line-height: 1.88px;
 }
 .central-images{
-   
+    
     padding-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+   /*  justify-content: space-between;
+    align-content: space-between; */
  }
    .central-images-item{
+    
     width: 370px;
     margin-right: 30px ;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     margin-bottom: 30px;
+    display: block;
   
 }
 .pictures{
     position: relative;
-    display: block;
+   /*  display: block; */
 }
 
 .central-images-text{
@@ -69,14 +71,18 @@ line-height: 1.88px;
    
 }
 
-
-
 .central-images-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .central-images-item:not(:last-child) {
     margin-right: 30px;
+    
+
 } 
+
+    
+
 .central-images-item:nth-child(3n+3) {
     margin-right: 0px; 
   }
+ 

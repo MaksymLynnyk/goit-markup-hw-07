@@ -140,6 +140,7 @@ body {
   font-style: normal;
   background-color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
+  margin: 0px;
 }
 
 .modal {
@@ -448,7 +449,7 @@ body {
 
 .auth-nav {
   display: flex;
-  padding-left: 331px;
+  padding-left: 300px;
 }
 
 .auth-nav .link {
@@ -500,7 +501,7 @@ body {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  width: 643px;
+  /* width: 643px; */
   display: flex;
   padding-top: 94px;
   padding-bottom: 50px;
@@ -928,7 +929,7 @@ body {
 }
 
 .foot-icons {
-  margin-right: 94px;
+  /* margin-right: 94px; */
   padding-top: 15px;
 }
 
@@ -959,7 +960,7 @@ body {
 .footer-logo {
   flex-direction: column;
   margin-right: 70px;
-  width: 145px;
+  /*   */
   padding: 0 0;
   margin-bottom: 10px;
   margin-top: 7px;
@@ -1096,8 +1097,8 @@ body {
   padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  /*  justify-content: space-between;
+    align-content: space-between; */
 }
 
 .central-images-item {
@@ -1106,11 +1107,12 @@ body {
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
   margin-bottom: 30px;
+  display: block;
 }
 
 .pictures {
   position: relative;
-  display: block;
+  /*  display: block; */
 }
 
 .central-images-text {
